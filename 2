@@ -1,0 +1,12 @@
+# Função para gerer a sequência de Fibonacci até o número informado usando loops
+def fibonacci(n):
+    sequencia = [0, 1]
+    while len(sequencia) < n:
+        proximo_numero = sequencia[-1] + sequencia[-2]
+        sequencia.append(proximo_numero)
+    return sequencia
+
+# Testando a função com um número
+n = 15
+resultado = fibonacci(n)
+print(resultado)
